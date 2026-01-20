@@ -1,170 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avança | Financing Potential, Not Privilege</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avança | Financing Potential, Not Privilege</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
+  <!-- Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-        /* 🔧 FIX: offset for fixed navbar */
-        section {
-            scroll-margin-top: 5rem;
-        }
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
 
-        .gradient-text {
-            background: linear-gradient(90deg, #2563eb, #7c3aed);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    .gradient-text {
+      background: linear-gradient(90deg, #2563eb, #7c3aed);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-        .hero-pattern {
-            background-color: #f8fafc;
-            background-image: radial-gradient(#cbd5e1 0.5px, transparent 0.5px);
-            background-size: 24px 24px;
-        }
+    .hero-pattern {
+      background-color: #f8fafc;
+      background-image: radial-gradient(#cbd5e1 0.5px, transparent 0.5px);
+      background-size: 24px 24px;
+    }
 
-        .card-hover:hover {
-            transform: translateY(-5px);
-            transition: all 0.3s ease;
-        }
-    </style>
+    section {
+      scroll-margin-top: 96px;
+    }
+  </style>
 </head>
 
-<!-- 🔧 FIX: padding-top equals navbar height -->
-<body class="text-slate-900 bg-white pt-20">
+<body class="bg-white text-slate-900 pt-24">
 
-<!-- Navigation -->
-<nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-20 items-center">
-            <div class="flex items-center space-x-2">
-                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                    <i class="fas fa-chart-line text-white text-xl"></i>
-                </div>
-                <span class="text-2xl font-bold tracking-tight text-slate-900">Avança</span>
-            </div>
-
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
-                <a href="#problem" class="hover:text-blue-600 transition">The Problem</a>
-                <a href="#solution" class="hover:text-blue-600 transition">ISA Solution</a>
-                <a href="#partners" class="hover:text-blue-600 transition">Partners</a>
-                <a href="#calculator" class="hover:text-blue-600 transition">Simulator</a>
-            </div>
-
-            <button class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-200">
-                Sign Up
-            </button>
-        </div>
+<!-- ================= NAV ================= -->
+<nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+        <i class="fas fa-chart-line text-white"></i>
+      </div>
+      <span class="text-2xl font-bold">Avança</span>
     </div>
+
+    <div class="hidden md:flex gap-8 text-sm font-medium text-slate-600">
+      <a href="#problem" class="hover:text-blue-600">Problem</a>
+      <a href="#solution" class="hover:text-blue-600">Solution</a>
+      <a href="#ana" class="hover:text-blue-600">Ana</a>
+      <a href="#apply" class="hover:text-blue-600">Apply</a>
+    </div>
+
+    <a href="#apply" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition">
+      Apply
+    </a>
+  </div>
 </nav>
 
-<!-- Hero -->
-<section class="pt-32 pb-20 hero-pattern text-center">
-    <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-6">
-        Education by Merit, Not by Credit
+<!-- ================= HERO ================= -->
+<section class="hero-pattern py-32 text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <span class="inline-block mb-6 px-4 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase">
+      Education by Merit, Not by Credit
     </span>
 
-    <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-        Financing potential,<br>
-        <span class="gradient-text">not privilege.</span>
+    <h1 class="text-5xl md:text-7xl font-bold mb-8">
+      Financing potential,<br>
+      <span class="gradient-text">not privilege.</span>
     </h1>
 
-    <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-        We finance your medical degree today. You only pay back once you become a doctor and start earning.
-        No co-signers, no banking bureaucracy.
+    <p class="text-xl text-slate-600 mb-10">
+      We finance your medical degree today. You only pay back once you become a doctor and start earning.
     </p>
 
-    <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <button class="bg-slate-900 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-slate-800 transition">
-            I am a Student (Ana)
-        </button>
-        <button class="bg-white text-slate-900 border-2 border-slate-200 px-8 py-4 rounded-xl text-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition">
-            I am an Institution/Employer
-        </button>
+    <div class="flex justify-center gap-4">
+      <a href="#apply" class="bg-slate-900 text-white px-8 py-4 rounded-xl text-lg font-semibold">
+        Apply as a Student
+      </a>
+      <a href="#problem" class="bg-white border-2 border-slate-200 px-8 py-4 rounded-xl text-lg font-semibold">
+        Learn More
+      </a>
     </div>
+  </div>
 </section>
 
-<!-- Problem -->
-<section id="problem" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
-        <div>
-            <h2 class="text-3xl font-bold mb-6">The Access Gap in Brazil</h2>
-            <p class="text-slate-600 mb-8 text-lg">
-                Millions of capable students are accepted into private universities but cannot enroll.
-                Traditional financial systems look at your past (Credit Score), ignoring your future (Career Potential).
-            </p>
+<!-- ================= PROBLEM ================= -->
+<section id="problem" class="py-28 bg-white">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <div>
+      <h2 class="text-4xl font-bold mb-6">The Access Gap in Brazil</h2>
+      <p class="text-lg text-slate-600 mb-8">
+        Millions of capable students are accepted into private universities but cannot enroll.
+        This is a financing failure — not a merit failure.
+      </p>
+
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <i class="fas fa-exclamation-triangle text-red-500 text-xl mt-1"></i>
+          <p class="text-slate-600">Banks reject students with no credit history or “negativado” families.</p>
         </div>
-    </div>
-</section>
-
-<!-- Solution -->
-<section id="solution" class="py-24 bg-slate-900 text-white text-center">
-    <h2 class="text-4xl font-bold mb-4">Success-Linked Financing</h2>
-    <p class="text-slate-400 max-w-2xl mx-auto">
-        Three pillars that align your dreams with the labor market.
-    </p>
-</section>
-
-<!-- Calculator -->
-<section id="calculator" class="py-24 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-4">Avança Simulator</h2>
-    <p class="text-slate-500">
-        Compare the impact on your journey as a physician
-    </p>
-</section>
-
-<!-- Partners -->
-<section id="partners" class="py-20 bg-slate-50 text-center">
-    <h2 class="text-sm uppercase tracking-widest text-slate-400 mb-10">
-        Our Ecosystem
-    </h2>
-
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 opacity-50 italic font-bold text-slate-800">
-        <div>UNIV-TIER-1</div>
-        <div>HEALTH-CORP</div>
-        <div>MED-TECH</div>
-        <div>ED-INSTITUTE</div>
-    </div>
-</section>
-
-<!-- Final CTA -->
-<section class="py-24 bg-white">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-[3rem] p-12 text-center text-white shadow-2xl">
-            <h2 class="text-4xl font-bold mb-6">Ready to start your career, Ana?</h2>
-            <p class="text-xl opacity-90 mb-10 max-w-xl mx-auto">
-                Don't let your medical school seat be lost to a lack of financing.
-                Join the next Avança cohort.
-            </p>
-            <button class="bg-white text-blue-600 px-10 py-4 rounded-xl text-lg font-bold hover:bg-slate-100 transition shadow-lg">
-                Start My Application
-            </button>
-            <p class="mt-6 text-sm opacity-70">Pre-registration takes only 10 minutes.</p>
+        <div class="flex gap-4">
+          <i class="fas fa-user-slash text-red-500 text-xl mt-1"></i>
+          <p class="text-slate-600">~30% dropout rate in private higher education due to financial stress.</p>
         </div>
+      </div>
     </div>
+
+    <div class="bg-slate-50 p-10 rounded-3xl border">
+      <div class="grid grid-cols-2 gap-6">
+        <div class="text-center">
+          <div class="text-4xl font-bold text-blue-600">21%</div>
+          <div class="text-xs uppercase text-slate-500">Graduates (Brazil)</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-slate-400">47%</div>
+          <div class="text-xs uppercase text-slate-500">OECD Avg</div>
+        </div>
+        <div class="col-span-2 text-center">
+          <div class="text-4xl font-bold text-red-500">75%</div>
+          <div class="text-xs uppercase text-slate-500">Students depend on financing</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-slate-900 text-slate-400 py-12 text-center">
-    <div class="space-x-6 text-sm mb-6">
-        <a href="#" class="hover:text-white transition">Privacy</a>
-        <a href="#" class="hover:text-white transition">Terms</a>
-        <a href="#" class="hover:text-white transition">FAQ</a>
-        <a href="#" class="hover:text-white transition">Contact</a>
+<!-- ================= SOLUTION (GRAPHIC) ================= -->
+<section id="solution" class="py-32 bg-gradient-to-b from-slate-950 to-slate-900 text-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-20">
+      <h2 class="text-5xl font-bold mb-6">Success-Linked Financing</h2>
+      <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+        Three pillars that align student outcomes, institutions, and employers.
+      </p>
     </div>
-    <div class="text-xs opacity-50">
-        © 2024 Avança Educational Tech S.A. All rights reserved.
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div class="rounded-[2.5rem] bg-slate-800/60 border border-slate-700 p-10">
+        <div class="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-8">
+          <i class="fas fa-brain text-blue-400 text-3xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold mb-4">Predictive Underwriting</h3>
+        <p class="text-slate-400">
+          AI evaluates future earning potential using ENEM scores,
+          labor demand, and soft skills — not credit history.
+        </p>
+      </div>
+
+      <div class="rounded-[2.5rem] bg-slate-800/60 border border-slate-700 p-10">
+        <div class="w-16 h-16 bg-purple-500/10 rounded-2xl flex items-center justify-center mb-8">
+          <i class="fas fa-hand-holding-dollar text-purple-400 text-3xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold mb-4">ISA 2.0 ($0 Upfront)</h3>
+        <p class="text-slate-400">
+          Pay a fixed percentage of income only after employment.
+          If income is below the threshold, payments are zero.
+        </p>
+      </div>
+
+      <div class="rounded-[2.5rem] bg-slate-800/60 border border-slate-700 p-10">
+        <div class="w-16 h-16 bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-8">
+          <i class="fas fa-building text-emerald-400 text-3xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold mb-4">Employer Buyout</h3>
+        <p class="text-slate-400">
+          Hospitals and healthcare systems can buy out student obligations
+          as a hiring or retention benefit.
+        </p>
+      </div>
+
     </div>
+  </div>
+</section>
+
+<!-- ================= ANA ================= -->
+<section id="ana" class="py-28 bg-white">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="flex items-center gap-5 mb-10">
+      <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center">
+        <i class="fas fa-user-graduate text-blue-600 text-3xl"></i>
+      </div>
+      <h2 class="text-4xl font-bold">Meet Ana</h2>
+    </div>
+
+    <p class="text-lg text-slate-600 mb-6">
+      Ana is a capable, low-income Brazilian student accepted into a private medical school —
+      but blocked by financing, not merit.
+    </p>
+
+    <p class="text-lg text-slate-700">
+      With Avança, Ana enrolls immediately, pays nothing upfront,
+      and repays only after earning income.
+      She is treated as an investment — not a risk.
+    </p>
+  </div>
+</section>
+
+<!-- ================= APPLY ================= -->
+<section id="apply" class="py-32 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="text-5xl font-bold mb-6">Apply to Avança</h2>
+    <p class="text-xl opacity-90 mb-10">
+      Pre-registration takes less than 10 minutes.
+    </p>
+
+    <button class="bg-white text-blue-600 px-10 py-4 rounded-xl text-lg font-bold hover:bg-slate-100">
+      Start Application
+    </button>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-slate-900 text-slate-400 py-12">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <p class="text-sm">&copy; 2024 Avança Educational Tech S.A.</p>
+  </div>
 </footer>
 
 </body>
