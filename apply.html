@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply | Avança</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+<!-- Header -->
+<header class="bg-white border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+        <i class="fas fa-chart-line text-white"></i>
+      </div>
+      <span class="text-2xl font-bold">Avança</span>
+    </a>
+
+    <a href="index.html" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">
+      ← Back to Home
+    </a>
+  </div>
+</header>
+
+<!-- Application Form -->
+<main class="py-20">
+  <div class="max-w-xl mx-auto px-6">
+
+    <div class="mb-10 text-center">
+      <h1 class="text-4xl font-bold mb-3">Student Application</h1>
+      <p class="text-slate-600">
+        This is a demo application to illustrate the Avança experience.
+      </p>
+    </div>
+
+    <form class="bg-white border border-slate-200 rounded-3xl p-8 space-y-6 shadow-sm">
+
+      <!-- Name -->
+      <div>
+        <label class="block text-sm font-semibold mb-1">Full Name</label>
+        <input
+          type="text"
+          placeholder="Ana Silva"
+          class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block text-sm font-semibold mb-1">Email Address</label>
+        <input
+          type="email"
+          placeholder="ana@email.com"
+          class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      <!-- Intended Degree -->
+      <div>
+        <label class="block text-sm font-semibold mb-1">Intended Degree</label>
+        <select
+          class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <option>Medicine</option>
+          <option>Nursing</option>
+          <option>Engineering</option>
+          <option>Computer Science</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <!-- University -->
+      <div>
+        <label class="block text-sm font-semibold mb-1">Accepted University</label>
+        <input
+          type="text"
+          placeholder="Private Medical School"
+          class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      <!-- ENEM Score -->
+      <div>
+        <label class="block text-sm font-semibold mb-1">ENEM Score (optional)</label>
+        <input
+          type="number"
+          placeholder="e.g. 760"
+          class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      <!-- Submit -->
+      <div class="pt-4">
+        <button
+          type="button"
+          class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition"
+        >
+          Submit Demo Application
+        </button>
+      </div>
+
+      <!-- Disclaimer -->
+      <p class="text-xs text-slate-500 text-center">
+        This is a demo. No data is stored or submitted.
+      </p>
+
+    </form>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="py-10 text-center text-xs text-slate-500">
+  © 2024 Avança Educational Tech S.A. · Demo Application
+</footer>
+
+</body>
+</html>
